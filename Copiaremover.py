@@ -1,34 +1,33 @@
+import os # entra no sistema operacional 
+import shutil # o que ira permitir copiar os arquivos
 
 
-import os #ela é uma biblioteca de comandos do sistema operacional que vai te auxiliar a fazer algumas operações dentro do seu computador
+pastadestiono = "C:\\Users\\DESKTOP\\Pictures\\Pastadeorigem" # a pasta de origem
 
-import shutil #Essa biblioteca ira permitir voce copiar e colar atravez desse parametro shutill.copy2(Variavel,Destinoparaqualseracolado)
+os.chdir(pastadestiono) # Faz com que pode mexer as pastas 
 
-#Aqui estou dando exemplo da minha camera que uso para par os arquivos CR3 e mover para outro lugar sem deletar
+pasta_que_sera_colado = "C:\\Users\\Desktop\\ARQUIVOONDEVAISERCOLADO\\" # a pasta onde sera colocado os arquivos
 
-#aqui eu uso duas barras \\ para nao ter conflito
-
-pastadestiono = "E:\\DCIM\\100CANON" # Variavel Caminho da pasta
-
-os.chdir(pastadestiono) #Os.chdir método usado para alterar o diretório de trabalho atual para o caminho especificado.
+listagemdearquivos = os.listdir() # faz a lista dos arquivos
 
 
-#Lista de arquivos
-pastadesintoo = os.listdir() # os.listdir() é usado para obter a lista de todos os arquivos e diretórios no diretório especificado.
-#
-Numero_incial = 0 # Variavel 0
 
+def copiar(): # uma funçãp
 
-for arquivos in pastamodificada: # "for"para "arquivos" no caso os arquivos que serão modificado "in" da pasta tal que no caso "pastamodificada"
-  
-     if "CR3" in arquivos: #"if" se String tipo de arquivo, no caso "CR3" no "in" "arquivos"
-        print(arquivos + " encontrados") #Printando arquivos da pasta e acrescentando string + " encontrados"
+    Numero_incial = 0 # variavel 0 inicial para contabilizar todos os arquivos copiados
 
-        shutil.copy2(arquivos,"C:\\Users\\Desktop\\Desktop\\Diretorio\\") # Aqui ira colar os arquivos, de onde ele copior os "arquivos"
-        Numero_incial += 1 #mudança de numero diferente
-        
-print(f'\nTotal de arquivos {Numero_incial}\n\nTerminado') #Printando os arquivos gerais copiados e totalizando-os eles.
+    for arquivos in listagemdearquivos: #aqui faz entrar em todos os arquivos por lista
 
-# Muito obrigado
-Print("ass: Autentico")
-        
+        if ".jpg" in arquivos: #aqui voce escolhera o tipo de arquivo que voce deseja copiar no caso só .jpg(ex:> .doc, .txt, .exe, etc..)
+
+            print(f'\033[034mcomparando arquivo\033[m \033[033m{arquivos}\033[m\n\033[032mArquivo indentificado \033[m') # vai printar os arquivo indentifacados
+
+            shutil.copy2(arquivos, pasta_que_sera_colado) # ira fazer a copia dos arquivo indentificados
+            Numero_incial += 1 # ira contabilizar todos os arquivos indentificados para copia
+
+        else:
+            print(f'\033[031mArquivo\033[m {arquivos}\033[031m nao identificado\033[m\n') # aqui vai dizer os que nao foram indentificados pelo tipo de arquivos
+            
+    print(f'\nTotal de arquivos copiados {Numero_incial}\n\nTerminado') # aqui ele vai dizer o total de que foi copiado
+
+copiar() #Executando a função
