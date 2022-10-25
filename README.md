@@ -1,1 +1,1 @@
-# Como-copiar-varios-arquivos-com-o-tipo-e-mover-para-outra-pasta
+# como copiar varios arquivos com python
