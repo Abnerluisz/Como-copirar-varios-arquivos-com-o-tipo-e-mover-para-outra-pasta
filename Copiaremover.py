@@ -1,33 +1,162 @@
-import os # entra no sistema operacional 
-import shutil # o que ira permitir copiar os arquivos
+function DELETE() {
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L11:BE14').activate();
+  spreadsheet.getActiveRangeList().clear({contentsOnly: true, skipFilteredRows: true})
+  .setBackground('BACKGROUND');
+  spreadsheet.getRange('G13').activate();
+  spreadsheet.getCurrentCell().setValue('0');
+  spreadsheet.getRange('H13').activate();
+};
 
+function MACRO2() {
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12').activate();
+  spreadsheet.getCurrentCell().setValue('1 ANO');
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getActiveRangeList().setBackground('#202124');
+  spreadsheet.getRange('G13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getRange('L12:L13').insertCells(SpreadsheetApp.Dimension.COLUMNS);
 
-pastadestiono = "C:\\Users\\DESKTOP\\Pictures\\Pastadeorigem" # a pasta de origem
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12').activate();
+  spreadsheet.getCurrentCell().setValue('2 ANOS');
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getActiveRangeList().setBackground('#202124');
+  spreadsheet.getRange('G13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getRange('L12:L13').insertCells(SpreadsheetApp.Dimension.COLUMNS);
 
-os.chdir(pastadestiono) # Faz com que pode mexer as pastas 
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12').activate();
+  spreadsheet.getCurrentCell().setValue('3 ANOS');
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getActiveRangeList().setBackground('#202124');
+  spreadsheet.getRange('G13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getRange('L12:L13').insertCells(SpreadsheetApp.Dimension.COLUMNS);
 
-pasta_que_sera_colado = "C:\\Users\\Desktop\\ARQUIVOONDEVAISERCOLADO\\" # a pasta onde sera colocado os arquivos
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12').activate();
+  spreadsheet.getCurrentCell().setValue('4 ANOS');
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getActiveRangeList().setBackground('#202124');
+  spreadsheet.getRange('G13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getRange('L12:L13').insertCells(SpreadsheetApp.Dimension.COLUMNS);
 
-listagemdearquivos = os.listdir() # faz a lista dos arquivos
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12').activate();
+  spreadsheet.getCurrentCell().setValue('5 ANOS');
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getActiveRangeList().setBackground('#202124');
+  spreadsheet.getRange('G13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getRange('L12:L13').insertCells(SpreadsheetApp.Dimension.COLUMNS);
 
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12').activate();
+  spreadsheet.getCurrentCell().setValue('6 ANOS');
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getActiveRangeList().setBackground('#202124');
+  spreadsheet.getRange('G13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getRange('L12:L13').insertCells(SpreadsheetApp.Dimension.COLUMNS);
 
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12').activate();
+  spreadsheet.getCurrentCell().setValue('7 ANO');
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getActiveRangeList().setBackground('#202124');
+  spreadsheet.getRange('G13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getRange('L12:L13').insertCells(SpreadsheetApp.Dimension.COLUMNS);
 
-def copiar(): # uma funçãp
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12').activate();
+  spreadsheet.getCurrentCell().setValue('8 ANOS');
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getActiveRangeList().setBackground('#202124');
+  spreadsheet.getRange('G13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getRange('L12:L13').insertCells(SpreadsheetApp.Dimension.COLUMNS);
 
-    Numero_incial = 0 # variavel 0 inicial para contabilizar todos os arquivos copiados
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12').activate();
+  spreadsheet.getCurrentCell().setValue('9 ANOS');
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getActiveRangeList().setBackground('#202124');
+  spreadsheet.getRange('G13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getRange('L12:L13').insertCells(SpreadsheetApp.Dimension.COLUMNS);
 
-    for arquivos in listagemdearquivos: #aqui faz entrar em todos os arquivos por lista
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12').activate();
+  spreadsheet.getCurrentCell().setValue('10 ANOS');
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getActiveRangeList().setBackground('#202124');
+  spreadsheet.getRange('G13').activate();
+  spreadsheet.getRange('A36').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('L13'));
+  spreadsheet.getRange('L12:L13').insertCells(SpreadsheetApp.Dimension.COLUMNS);
 
-        if ".jpg" in arquivos: #aqui voce escolhera o tipo de arquivo que voce deseja copiar no caso só .jpg(ex:> .doc, .txt, .exe, etc..)
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.getActiveRangeList().setBackground('BACKGROUND');
+  
+};
 
-            print(f'\033[034mcomparando arquivo\033[m \033[033m{arquivos}\033[m\n\033[032mArquivo indentificado \033[m') # vai printar os arquivo indentifacados
-
-            shutil.copy2(arquivos, pasta_que_sera_colado) # ira fazer a copia dos arquivo indentificados
-            Numero_incial += 1 # ira contabilizar todos os arquivos indentificados para copia
-
-        else:
-            print(f'\033[031mArquivo\033[m {arquivos}\033[031m nao identificado\033[m\n') # aqui vai dizer os que nao foram indentificados pelo tipo de arquivos
-            
-    print(f'\nTotal de arquivos copiados {Numero_incial}\n\nTerminado') # aqui ele vai dizer o total de que foi copiado
-
-copiar() #Executando a função
+function test() {
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('L12:L13').activate();
+  spreadsheet.getActiveRangeList().setBackground('BACKGROUND');
+};
